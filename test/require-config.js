@@ -1,7 +1,7 @@
 require.config({
     baseUrl: "./",
     paths: {
-        "Test": "Test"
+        "Test2": "Test2"
     },
     shim: {
 
@@ -9,7 +9,7 @@ require.config({
 });
 
 require([
-    "Test"
+    "Test2"
 ], function (Test) {
 
 });

@@ -1,4 +1,4 @@
-var json = {
+var json2 = {
 	"@id": "http://wellcomelibrary.org/iiif/b1818893x/manifest",
 	"service": [
 		{
@@ -21,5 +21,5 @@ var json = {
 	]
 }
 
-var result = json.en().en().traverseUnique(x => x.Connections).first();
+var result = json2.en().traverseUnique(x => x);
 console.log(result);
