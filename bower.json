@@ -1,0 +1,21 @@
+{
+  "name": "exjs-test",
+  "homepage": "https://github.com/edsilv/exjs-test",
+  "authors": [
+    "edsilv <e.silverton@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "exjs": "~0.4.0"
+  }
+}

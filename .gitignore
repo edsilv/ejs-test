@@ -1,0 +1,7 @@
+.idea
+npm-debug.log
+node_modules
+bower_components
+typings
+test/*.js
+!test/require-config.js
