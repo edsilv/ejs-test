@@ -21,5 +21,6 @@ var json2 = {
 	]
 }
 
-var result = json2.en().traverseUnique(x => x);
+var id = "http://wellcomelibrary.org/iiif/tokenterms";
+var result = [json2].en().first(r => r['@id'] === id);
 console.log(result);
