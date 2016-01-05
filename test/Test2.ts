@@ -19,8 +19,24 @@ var json2 = {
 			]
 		}
 	]
+};
+
+var id = "http://wellcomelibrary.org/iiif/logout";
+
+var result = [json2].en()
+		.traverseUnique(x => getAllArrays(x))
+		.first(r => r['@id'] === id);
+
+function getAllArrays(obj: any): exjs.IEnumerable<any> {
+	if (!obj)
+		return [].en();
+	var all = [].en();
+	for (var key in obj) {
+		var val = obj[key];
+		if (Array.isArray(val))
+			all = all.concat(val)
+	}
+	return all;
 }
 
-var id = "http://wellcomelibrary.org/iiif/tokenterms";
-var result = [json2].en().first(r => r['@id'] === id);
 console.log(result);
